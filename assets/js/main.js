@@ -116,3 +116,25 @@
     });
   }
 })();
+
+/* Visionneuse de la galerie */
+(function () {
+  var items = document.querySelectorAll('.mosaic .m');
+  if (!items.length) return;
+  var lb = document.createElement('div');
+  lb.className = 'lb'; lb.setAttribute('role', 'dialog'); lb.setAttribute('aria-label', 'Image agrandie');
+  lb.innerHTML = '<button aria-label="Fermer">×</button><img alt=""><p></p>';
+  document.body.appendChild(lb);
+  var img = lb.querySelector('img'), cap = lb.querySelector('p');
+  var close = function () { lb.classList.remove('on'); };
+  items.forEach(function (m) {
+    m.addEventListener('click', function () {
+      var i = m.querySelector('img');
+      img.src = i.currentSrc || i.src; img.alt = i.alt;
+      cap.textContent = (m.querySelector('figcaption') || {}).textContent || '';
+      lb.classList.add('on');
+    });
+  });
+  lb.addEventListener('click', close);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+})();
