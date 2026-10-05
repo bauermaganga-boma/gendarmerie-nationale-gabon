@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 112" role="img" aria-label="Emblème">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#17407a"/><stop offset="1" stop-color="#0a1f3c"/></linearGradient>
+    <clipPath id="s"><path d="M48 4 90 18v38c0 28-18 44-42 52C24 100 6 84 6 56V18z"/></clipPath>
+  </defs>
+  <path d="M48 2 92 17v39c0 29-19 46-44 54C23 102 4 85 4 56V17z" fill="#c8a24a"/>
+  <path d="M48 6 88 19v37c0 26-17 41-40 49C25 97 8 82 8 56V19z" fill="url(#g)"/>
+  <g clip-path="url(#s)">
+    <rect x="0" y="86" width="32" height="30" fill="#009e60"/>
+    <rect x="32" y="86" width="32" height="30" fill="#fcd116"/>
+    <rect x="64" y="86" width="32" height="30" fill="#3a75c4"/>
+  </g>
+  <path d="M48 6 88 19v37c0 26-17 41-40 49C25 97 8 82 8 56V19z" fill="none" stroke="#c8a24a" stroke-width="1.5"/>
+  <!-- grenade enflammée -->
+  <path d="M48 17c-7 7-10 12-10 17 0 5 4 8 10 8s10-3 10-8c0-5-3-10-10-17z" fill="#e8c46a"/>
+  <path d="M48 26c-3 3-4 5-4 7 0 2 2 4 4 4s4-2 4-4c0-2-1-4-4-7z" fill="#0a1f3c"/>
+  <rect x="42" y="42" width="12" height="5" rx="1" fill="#c8a24a"/>
+  <ellipse cx="48" cy="62" rx="15" ry="17" fill="#c8a24a"/>
+  <g stroke="#0a1f3c" stroke-width="1.6" fill="none" opacity=".75">
+    <path d="M33 62h30M48 45v34M37 52h22M37 72h22"/>
+  </g>
+  <path d="M36 82h24" stroke="#e8c46a" stroke-width="2"/>
+</svg>

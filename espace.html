@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Espace personnel (démonstration) — Gendarmerie nationale</title>
+<meta name="description" content="Démonstration de l’espace de gestion interne sécurisé de la Gendarmerie nationale gabonaise, avec données fictives.">
+<meta property="og:title" content="Espace personnel (démonstration) — Gendarmerie nationale">
+<meta property="og:description" content="Un site officiel au service des citoyens : numéros utiles, vérification des contrôles, signalement, recrutement.">
+<meta name="theme-color" content="#0a1f3c">
+<link rel="icon" href="assets/img/emblem.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<div class="util">
+  <div class="wrap">
+    <div class="util__sos"><strong>Signaler un racket :</strong>
+      <a class="num" href="tel:1401">1401</a>
+      <a class="num" href="tel:+24101732036">011 73 20 36</a>
+      <a class="num" href="tel:+24101762280">011 76 22 80</a>
+    </div>
+    <div class="util__r"><a href="https://www.facebook.com/people/Gendarmerie-Nationale-Gabonaise-Officielle/100068923221450/" target="_blank" rel="noopener">Page Facebook</a> &nbsp;·&nbsp; <a href="plateforme.html">Proposition de plateforme</a></div>
+  </div>
+</div>
+<div class="maquette"><b>Maquette de proposition</b> — ce site n'est pas le site officiel de la Gendarmerie nationale. Les services marqués « démonstration » utilisent des données fictives.</div>
+
+<header class="header">
+  <div class="tricolor" style="position:absolute;left:0;right:0;top:0;height:3px"></div>
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Gendarmerie nationale gabonaise — accueil">
+      <img src="assets/img/emblem.svg" alt="">
+      <span class="brand__t"><small>République gabonaise</small><b>Gendarmerie nationale</b></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <a href="index.html#institution">Institution</a>
+      <a href="index.html#organisation">Organisation</a>
+      <a href="index.html#actualites">Actualités</a>
+      <a href="index.html#route">Sur la route</a>
+      <a href="index.html#demarches">Démarches</a>
+      <a href="index.html#recrutement">Recrutement</a>
+      <a href="index.html#brigades">Brigades</a>
+      <a class="btn btn--gold btn--sm" href="index.html#route" style="margin-left:8px">Vérifier un contrôle</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="contenu">
+<div class="login" id="login">
+  <div class="login__c">
+    <img class="em" src="assets/img/emblem.svg" alt="">
+    <h1>Espace personnel</h1>
+    <p class="sub">Accès réservé aux personnels de la Gendarmerie nationale, selon le grade et l'unité.</p>
+    <form id="login-f">
+      <div class="fld"><label for="l-mat">Matricule</label><input id="l-mat" type="text" placeholder="Matricule" autocomplete="off"></div>
+      <div class="fld"><label for="l-pw">Mot de passe</label><input id="l-pw" type="password" placeholder="••••••••" autocomplete="off"></div>
+      <div class="fld"><label for="l-2fa">Code de double authentification</label><input id="l-2fa" type="text" inputmode="numeric" placeholder="6 chiffres" autocomplete="off"></div>
+      <div class="notice">Démonstration : aucun identifiant n'est nécessaire et rien n'est transmis. Le bouton ouvre un tableau de bord avec <b>données fictives</b>.</div>
+      <button class="btn btn--navy" type="submit" style="width:100%">Ouvrir la démonstration</button>
+    </form>
+    <p style="font-size:12.5px;color:var(--muted);text-align:center;margin:16px 0 0">Version réelle : double authentification, journal des actions, hébergement souverain.</p>
+  </div>
+</div>
+
+<div class="dash" id="dash">
+  <div class="dash__top"><div class="wrap">
+    <div class="who">Connecté en tant que <b>Commandement — démonstration</b> · données fictives</div>
+    <button class="btn btn--out btn--sm" id="logout" type="button">Se déconnecter</button>
+  </div></div>
+  <div class="wrap dash__layout">
+    <nav class="side" aria-label="Modules">
+      <a class="on" href="#" onclick="return false"><svg width="18" height="18"><use href="assets/img/icons.svg#i-grid"/></svg>Tableau de bord</a>
+      <a href="#" onclick="return false"><svg width="18" height="18"><use href="assets/img/icons.svg#i-doc"/></svg>Ordres de mission</a>
+      <a href="#" onclick="return false"><svg width="18" height="18"><use href="assets/img/icons.svg#i-wallet"/></svg>Contrôles et amendes</a>
+      <a href="#" onclick="return false"><svg width="18" height="18"><use href="assets/img/icons.svg#i-alert"/></svg>Signalements</a>
+      <a href="#" onclick="return false"><svg width="18" height="18"><use href="assets/img/icons.svg#i-users"/></svg>Recrutement</a>
+      <a href="#" onclick="return false"><svg width="18" height="18"><use href="assets/img/icons.svg#i-badge"/></svg>Ressources humaines</a>
+      <a href="#" onclick="return false"><svg width="18" height="18"><use href="assets/img/icons.svg#i-pin"/></svg>Brigades</a>
+    </nav>
+    <div>
+      <div class="kpis">
+        <div class="kpi"><small>Ordres de mission actifs</small><b>128</b><i class="up">exemple</i></div>
+        <div class="kpi"><small>Amendes avec quittance</small><b>100 %</b><i class="up">objectif</i></div>
+        <div class="kpi"><small>Signalements en cours</small><b>17</b><i class="dn">exemple</i></div>
+        <div class="kpi"><small>Recrues suivies</small><b>954</b><i class="up">programme 2026</i></div>
+      </div>
+      <div class="panels">
+        <div class="panel"><h3>Ordres de mission par légion (exemple)</h3>
+          <div class="bars">
+            <div class="bar-r"><span>Ouest</span><span class="tr"><i style="width:82%"></i></span><b>41</b></div>
+            <div class="bar-r"><span>Centre-Ouest</span><span class="tr"><i style="width:56%"></i></span><b>28</b></div>
+            <div class="bar-r"><span>Est</span><span class="tr"><i style="width:44%"></i></span><b>22</b></div>
+            <div class="bar-r"><span>Nord</span><span class="tr"><i style="width:36%"></i></span><b>18</b></div>
+            <div class="bar-r"><span>Sud</span><span class="tr"><i style="width:38%"></i></span><b>19</b></div>
+          </div></div>
+        <div class="panel"><h3>Signalements récents (exemple)</h3>
+          <div class="rows">
+            <div class="rw"><span>SR-102934 · Barrage non autorisé</span><span class="st a">À examiner</span></div>
+            <div class="rw"><span>SR-102911 · Demande sans quittance</span><span class="st b">Enquête</span></div>
+            <div class="rw"><span>SR-102870 · Matricule non visible</span><span class="st c">Traité</span></div>
+            <div class="rw"><span>SR-102852 · Contrôle sans mission</span><span class="st b">Enquête</span></div>
+          </div></div>
+      </div>
+      <p class="note-s">Tous les chiffres de cette page sont fictifs : ils illustrent la maquette de la phase 3 (gestion interne).</p>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var l=document.getElementById('login'),d=document.getElementById('dash');
+  document.getElementById('login-f').addEventListener('submit',function(e){e.preventDefault();l.style.display='none';d.classList.add('on');window.scrollTo(0,0);});
+  document.getElementById('logout').addEventListener('click',function(){d.classList.remove('on');l.style.display='';});
+})();
+</script>
+</main>
+
+<footer class="footer">
+  <div class="tricolor"></div>
+  <div class="wrap" style="padding-top:44px">
+    <div class="footer__g">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/img/emblem.svg" alt=""><span class="brand__t"><small>République gabonaise</small><b>Gendarmerie nationale</b></span></a>
+        <p>Force militaire chargée de la sécurité intérieure. Siège à Libreville.</p>
+      </div>
+      <div><h4>L'institution</h4><a href="index.html#institution">Présentation</a><a href="index.html#missions">Missions</a><a href="index.html#organisation">Organisation</a><a href="index.html#histoire">Histoire</a></div>
+      <div><h4>Citoyens</h4><a href="index.html#route">Vos droits sur la route</a><a href="index.html#demarches">Mes démarches</a><a href="index.html#recrutement">Recrutement</a><a href="index.html#brigades">Brigades</a></div>
+      <div><h4>Plateforme</h4><a href="plateforme.html">Proposition en 4 phases</a><a href="espace.html">Espace personnel (démo)</a><a href="https://www.facebook.com/people/Gendarmerie-Nationale-Gabonaise-Officielle/100068923221450/" target="_blank" rel="noopener">Facebook</a></div>
+    </div>
+    <div class="footer__bar">
+      <span>© 2026 Gendarmerie nationale gabonaise — Libreville. Tous droits réservés. Site développé par <b>Rouana</b>.</span>
+      <span>Maquette de proposition — non officielle.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/assistant.js"></script>
+</body>
+</html>
